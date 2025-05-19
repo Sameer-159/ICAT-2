@@ -9,7 +9,7 @@ SmartAttend is an intelligent attendance management system that leverages face d
 
 - **Automated Attendance:** Uses a deep learning face detection model (Caffe) and a Random Forest classifier for student recognition.
 - **User Authentication:** Secure login and signup for teachers.
-- **Class & …Management:** Add, view, and manage classes and students.
+- **Class & Management:** Add, view, and manage classes and students.
 - **Sample Collection & Augmentation:** Collects face samples and augments them for robust training.
 - **Model Training:** Trains a classifier for each class using collected samples.
 - **Attendance Marking:** Detects and recognizes students from images to mark attendance.
