@@ -34,14 +34,14 @@ Install Python 3.8+ and run:
 pip install -r [requirements.txt](http://_vscodecontentref_/6)
 ```
 
-```sh
 2. MongoDB Setup
+```sh
 Ensure MongoDB is running locally on port 27017.
 ```
 
-```sh
 3. Initialize Database and Folders (for testing)
 To reset and populate the database with test data:
+```sh
 python [initialize_folder_structure_for_testing.py](http://_vscodecontentref_/8)
 ```
 
