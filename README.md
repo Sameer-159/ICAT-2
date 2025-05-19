@@ -77,41 +77,53 @@ To start the application, run:
 python [main.py](http://_vscodecontentref_/9)
 ```
 
-Usage
-Login/Signup: Start the app and log in or sign up as a teacher.
-Manage Classes: Add new classes and view existing ones.
-Add Students: Add students to classes and collect face samples.
-Train Model: After collecting samples, train the classifier for the class.
-Mark Attendance: Use the GUI to upload an image and mark attendance automatically.
-Generate Reports: Export attendance records as CSV files.
+---
 
-Model Details
-Face Detection: Uses a Caffe model defined in detection_model/architecture.prototxt and detection_model/weights.caffemodel.
-Face Recognition: Trains a Random Forest classifier on augmented face samples per class.
-Sample Augmentation: Uses Albumentations for robust data augmentation.
+## Usage
+- **Login/Signup: Start the app and log in or sign up as a teacher.
+- **Manage Classes: Add new classes and view existing ones.
+- **Add Students: Add students to classes and collect face samples.
+- **Train Model: After collecting samples, train the classifier for the class.
+- **Mark Attendance: Use the GUI to upload an image and mark attendance automatically.
+- **Generate Reports: Export attendance records as CSV files.
 
+---
 
-Key Scripts
-initialize_db_for_testing.py: Resets and seeds the MongoDB database with test teachers, classes, and students.
-initialize_folder_structure_for_testing.py: Cleans up the class folders for a fresh start.
-main.py: Main application with GUI, database, and all core logic.
-model_testing.py: Standalone script for testing face detection and recognition models.
+## Model Details
+- **Face Detection: Uses a Caffe model defined in detection_model/architecture.prototxt and detection_model/weights.caffemodel.
+- **Face Recognition: Trains a Random Forest classifier on augmented face samples per class.
+- **Sample Augmentation: Uses Albumentations for robust data augmentation.
 
-Requirements
-Python 3.8+
-MongoDB (local)
-Webcam (for sample collection and testing)
-See requirements.txt for Python dependencies.
+---
 
-Acknowledgements
-OpenCV
-Albumentations
-CustomTkinter
-MongoDB
+## Key Scripts
+- **initialize_db_for_testing.py: Resets and seeds the MongoDB database with test teachers, classes, and students.
+- **initialize_folder_structure_for_testing.py: Cleans up the class folders for a fresh start.
+- **main.py: Main application with GUI, database, and all core logic.
+- **model_testing.py: Standalone script for testing face detection and recognition models.
 
+---
 
-License
+- **## Requirements
+- **Python 3.8+
+- **MongoDB (local)
+- **Webcam (for sample collection and testing)
+- **See requirements.txt for Python dependencies.
+
+---
+
+## Acknowledgements
+- **OpenCV
+- **Albumentations
+- **CustomTkinter
+- **MongoDB
+
+---
+
+## License
 This project is for educational purposes.
 
-Contact
+---
+
+## Contact
 For questions or contributions, please open an issue or pull request.
