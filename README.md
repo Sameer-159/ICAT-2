@@ -92,10 +92,18 @@ python src/initialize_folders.py
 python src/main.py
 ```
 2. Login or create a teacher account
+
+   ![Sign-Up_Log-In_Screen](https://github.com/user-attachments/assets/baf266a6-6562-4b60-bc75-c08c898a810e)
+
 3. Create classes and add students
-4. Collect face samples using the webcam
-5. Train the recognition model
-6. Start taking attendance!
+
+   ![Classes_Screen](https://github.com/user-attachments/assets/25822031-587f-4d72-93dd-63edac402c9e)
+   ![Students_Screen](https://github.com/user-attachments/assets/6e5b40e8-aa87-47d4-a224-6bab8d881f55)
+
+  
+5. Collect face samples using the webcam
+6. Train the recognition model
+7. Start taking attendance!
 ---
 
 ## Usage
