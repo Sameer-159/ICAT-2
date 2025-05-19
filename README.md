@@ -109,8 +109,35 @@ python src/main.py
 - Students: {studentID, name, age, gender, batch, major}
 - Attendance: {date, classID, present[]}
 - 
-- **Sample Augmentation:** Uses Albumentations for robust data augmentation.
+### Sample Augmentation:** Uses Albumentations for robust data augmentation.
+- Uses Albumentations library for robust data augmentation:
+  - Geometric Transforms:
+    - Random rotation (±30 degrees)
+    - Horizontal flips
+    - Random scale (±20%)
+    - Elastic deformations
+  - Color Transforms:
+    - Brightness and contrast adjustment
+    - Random brightness shifts
+    - Gamma correction
+  - Noise Injection:
+    - Gaussian noise
+    - Motion blur
+    - ISO noise simulation
+  - Quality Transforms:
+    - JPEG compression
+    - Image downscaling
+  - Environment Simulation:
+    - Lighting changes
+    - Shadow effects
+    - Weather effects (fog, rain)
 
+This comprehensive augmentation pipeline helps create a more robust face recognition model by:
+- Improving model generalization
+- Reducing overfitting
+- Handling various lighting conditions
+- Managing different face angles and poses
+-  
 ---
 
 ## Key Scripts
