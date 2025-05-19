@@ -108,8 +108,8 @@ python src/main.py
 - Classes: {classID, className, teacherID, students[]}
 - Students: {studentID, name, age, gender, batch, major}
 - Attendance: {date, classID, present[]}
-- 
-### Sample Augmentation:** Uses Albumentations for robust data augmentation.
+  
+### Sample Augmentation:
 - Uses Albumentations library for robust data augmentation:
   - Geometric Transforms:
     - Random rotation (±30 degrees)
@@ -137,7 +137,7 @@ This comprehensive augmentation pipeline helps create a more robust face recogni
 - Reducing overfitting
 - Handling various lighting conditions
 - Managing different face angles and poses
--  
+
 ---
 
 ## Key Scripts
