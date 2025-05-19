@@ -89,8 +89,26 @@ python src/main.py
 ---
 
 ## Model Details
-- **Face Detection:** Uses a Caffe model defined in detection_model/architecture.prototxt and detection_model/weights.caffemodel.
-- **Face Recognition:** Trains a Random Forest classifier on augmented face samples per class.
+### Face Detection
+- Uses Caffe-based deep learning model
+- Real-time detection through OpenCV
+- Configurable confidence threshold
+
+### Face Recognition
+- Random Forest classifier per class
+- Data augmentation using Albumentations
+- Features:
+  - Rotation and flips
+  - Brightness/contrast adjustment
+  - Noise injection
+  - Elastic transformations
+
+### Database Schema
+- Teachers: {teacherID, username, password}
+- Classes: {classID, className, teacherID, students[]}
+- Students: {studentID, name, age, gender, batch, major}
+- Attendance: {date, classID, present[]}
+- 
 - **Sample Augmentation:** Uses Albumentations for robust data augmentation.
 
 ---
@@ -125,4 +143,7 @@ This project is for educational purposes.
 ---
 
 ## Contact
-For questions or contributions, please open an issue or pull request.
+For questions or support:
+- Open an issue
+- Submit a pull request
+- Email: sameerrizwanf23@nutech.edu.pk
