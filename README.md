@@ -83,7 +83,7 @@ python [main.py](http://_vscodecontentref_/9)
 
 ---
 
-##Requirements
+## Requirements
 - **Python 3.8+**
 - **MongoDB (local)**
 - **Webcam (for sample collection and testing)**
