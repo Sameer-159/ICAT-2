@@ -20,7 +20,18 @@ SmartAttend is an intelligent attendance management system that leverages face d
 
 ## Project Structure
 
-SmartAttend/ │ ├── requirements.txt ├── detection_model/ │ ├── architecture.prototxt │ └── weights.caffemodel └── src/ ├── initialize_db_for_testing.py ├── initialize_folder_structure_for_testing.py ├── main.py └── model_testing.py
+```
+SmartAttend/
+├── src/
+│   ├── main.py                   # Main application entry point
+│   ├── model_testing.py          # Face detection/recognition testing
+│   ├── initialize_db.py          # Database initialization
+│   └── initialize_folders.py     # Folder structure setup
+├── detection_model/
+│   ├── architecture.prototxt     # Caffe model architecture
+│   └── weights.caffemodel       # Pre-trained model weights
+└── requirements.txt             # Python dependencies
+```
 
 ---
 
@@ -30,32 +41,41 @@ SmartAttend/ │ ├── requirements.txt ├── detection_model/ │ ├�
 
 Install Python 3.8+ and run:
 
-```sh
-pip install -r [requirements.txt](http://_vscodecontentref_/6)
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/ICAT-2.git
+cd ICAT-2
 ```
 
-2. MongoDB Setup
-```sh
-Ensure MongoDB is running locally on port 27017.
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
 ```
 
-3. Initialize Database and Folders (for testing)
-To reset and populate the database with test data:
-```sh
-python [initialize_folder_structure_for_testing.py](http://_vscodecontentref_/8)
+3. Install and start MongoDB:
+```bash
+sudo systemctl start mongod
 ```
 
-To reset the folder structure for classes:
-```sh
-python [initialize_folder_structure_for_testing.py](http://_vscodecontentref_/8)
+4. Initialize the system:
+```bash
+python src/initialize_db.py
+python src/initialize_folders.py
 ```
 
-4. Run the Application
-To start the application, run:
-```sh
-python [main.py](http://_vscodecontentref_/9)
-```
+---
 
+### 2. How to Run
+
+1. Start the application:
+```bash
+python src/main.py
+```
+2. Login or create a teacher account
+3. Create classes and add students
+4. Collect face samples using the webcam
+5. Train the recognition model
+6. Start taking attendance!
 ---
 
 ## Usage
