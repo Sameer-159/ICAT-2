@@ -5,6 +5,26 @@ SmartAttend is an intelligent attendance management system that leverages face d
 
 ---
 
+## Table of Contents
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+  - [Install Dependencies](#1-install-dependencies)
+  - [How to Run](#2-how-to-run)
+- [Usage](#usage)
+- [Model Details](#model-details)
+  - [Face Detection](#face-detection)
+  - [Face Recognition](#face-recognition)
+  - [Database Schema](#database-schema)
+  - [Sample Augmentation](#sample-augmentation)
+- [Key Scripts](#key-scripts)
+- [Requirements](#requirements)
+- [Acknowledgements](#acknowledgements)
+- [License](#license)
+- [Contact](#contact)
+
+---
+
 ## Features
 
 - **Automated Attendance:** Uses a deep learning face detection model (Caffe) and a Random Forest classifier for student recognition.
@@ -174,3 +194,4 @@ For questions or support:
 - Open an issue
 - Submit a pull request
 - Email: sameerrizwanf23@nutech.edu.pk
+- Email: xie19113@gmail.com
